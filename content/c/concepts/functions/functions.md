@@ -1,6 +1,6 @@
 ---
 Title: 'Functions'
-Description: 'Functions are blocks of code that can be run multiple times within a program. They are stored under a name similar to a variable and can be called using this name. A function is declared with the return type, the function name, parameter(s), and the code for it to run in curly brackets. pseudo return_type name(parameters) { // Code goes here } '
+Description: 'Functions are blocks of code that can be run multiple times within a program. They are stored under a name similar to a variable and can be called using this name. A function is defined with the return type, the function name, parameter(s), and the code for it to run in curly brackets. pseudo return_type name(parameters) { // Code goes here } '
 Subjects:
   - 'Code Foundations'
   - 'Computer Science'
@@ -16,7 +16,7 @@ Functions are blocks of code that can be run multiple times within a program. Th
 
 ## Declaring a Function
 
-A function is declared with the return type, the function name, parameter(s), and the code for it to run in curly brackets.
+A function is defined with the return type, the function name, parameter(s), and the code for it to run in curly brackets.
 
 ```pseudo
 return_type name(parameters) {
@@ -24,7 +24,7 @@ return_type name(parameters) {
 }
 ```
 
-A function named `greet()` that prints a greeting to the console can be declared like this:
+A function named `greet()` that prints a greeting to the console can be defined like this:
 
 ```c
 void greet(void) {
@@ -34,12 +34,12 @@ void greet(void) {
 
 ## Calling a Function
 
-After a function is declared, it can be called in the program. The syntax for this is the variables name followed by parenthesis.
+After a function is defined, it can be called in the program. The syntax for this is the function's name followed by parenthesis.
 
 ```c
 #include <stdio.h>
 
-// Declaring the function
+// Defining the function
 
 void greet(void) {
   puts("Howdy!");
@@ -99,7 +99,7 @@ int main() {
 
 ## Returning Values
 
-A function is also capable of returning a value back to were it was called using the `return` keyword. This is useful for computing values within a function. Notice that the word proceeding the function name indicates the type of value returned.
+A function is also capable of returning a value back to were it was called using the `return` keyword. This is useful for computing values within a function. Notice that the word preceeding the function name indicates the type of value returned.
 
 ```c
 #include <stdio.h>
